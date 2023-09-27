@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+}
+body{
+	min-height: calc(100vh - 100px);
+	background-color: lightgray;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+body.home-page{
+	background: url("../images/home-page-bg.png");
+}
+body.chars-page , body.single-char-page{
+	background: url("../images/see-charecters-page-bg.png");
+}
+.container{
+	width: 80%;
+	margin:50px auto;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header ul li{
+	display: inline;
+	margin: 0 0 0 20px;
+
+}
+main{
+	margin: 100px 0 0 0;
+}
+.home-page main .title{
+	font-size: 72px;
+	line-height: 100px;
+}
+main .title h2 , main .paragraph p , .btn button{
+	text-shadow: 1px -1px 3px #000;
+}
+.home-page main .paragraph{
+	font-size: 20px;
+	width: 620px;
+	margin: 20px 0;
+	font-weight: 500;
+}
+.btn button{
+	font-size: 20px;
+	background: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	padding: 10px 5px;
+}
+.btn a , .btn span{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+ .btn button svg{
+	width: 30px;
+	color: #fff;
+}
+.chars-container{
+	background: #1B1B1B;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 30px;
+	row-gap: 40px;
+	padding: 20px;
+	margin: 30px auto;
+	position: relative;
+	filter: drop-shadow(0px 7px 20px rgba(0, 0, 0, 0.30));
+	border-radius: 5px;
+}
+.single-char{
+	overflow: hidden;
+	border-radius: 15px;
+	filter: drop-shadow(0px 7px 20px rgba(0, 0, 0, 0.30));
+}
+.single-char-genarel-info{
+	background: #282828;
+	padding: 10px 10px;
+	width: 100%;
+	position: relative;
+	z-index: 2;
+}
+.single-char img{
+	scale: 1.25;
+}
+
+.chars-page .title h2{
+	font-size: 40px;
+}
+.chars-container a{
+	text-decoration: none;
+}
+.chars-page .title h3{
+	font-size: 15px;
+}
+.single-char-page{
+	height: 100vh;
+	overflow: hidden;
+}
+.char-info h2{
+	font-size: 62px;
+}
+.char-info p{
+	font-size: 18px;
+}
+.char-info {
+	position: relative;
+	z-index: 3;
+}
+.char-info-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.char-info-container .char-image{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.char-info-container .char-image img{
+	width: 600px;
+	scale: 1.1;
+}
+.single-char img{
+	transition: 0.2s;
+}
+.single-char img:hover{
+	transform: scale(0.9);
+}
